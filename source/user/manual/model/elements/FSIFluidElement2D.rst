@@ -51,7 +51,25 @@ Theory
    \nabla^2 p = \frac{1}{c^2} \ddot{p} & \text{in } \Omega \\
    \frac{\partial p}{\partial n} = -\rho \dot{u}_n & \text{on } \Gamma_n \\
    \end{array} \right.
- 
+| After multiplication by a weight function, integration by parts, application of the divergence theorem and susbstitution of BCs the weak form is shown below:
+.. math::
+
+   \left( \text{W} \right)\left\{ \int_{\Omega_F} \delta p \left( {\left( \nabla \right)}^{\text{T}} \nabla p + \frac{1}{{c}^{2}} \ddot{p} \right) d\Omega + \rho \int_{\Gamma_1} \delta p \dot{u}_{n_{F,h}} d\Gamma + \rho \int_{\Gamma_2} \delta p \dot{u}_{n_{F,b}} d\Gamma + \frac{1}{c} \left( \frac{1 - \alpha}{1 + \alpha} \right) \int_{\Gamma_2} \delta p \dot{p} d\Gamma + \frac{1}{g} \int_{\Gamma_3} \delta p \ddot{p} d\Gamma + \frac{1}{c} \int_{\Gamma_4} \delta p \dot{p} d\Gamma = 0 \ \ (4.14) \right.
+| Standard Galerkin discretization applied to the weak form leads to
+.. math::
+
+   \left( \text{M} \right)\left\{
+   \begin{align*}
+      & \sum_{e}^{n_{el}} \delta \mathbf{P}_{e}^{\text{T}} \underbrace{\left( \int_{\Omega^{e}} \left( {\left( \nabla \mathbf{N}_{F} \right)}^{\text{T}} \nabla \mathbf{N}_{F} \right) d\Omega \right)}_{\mathbf{K}_{F}^{e}} \mathbf{P}_{e} \\
+      & + \sum_{e}^{n_{el}} \delta \mathbf{P}_{e}^{\text{T}} \underbrace{\left( \frac{1}{c^2} \int_{\Omega^{e}} \mathbf{N}_{F}^{\text{T}} \mathbf{N}_{F} d\Omega \right)}_{\mathbf{M}_{F}^{e}} {\mathbf{\ddot{P}}}_{e} \\
+      & + \sum_{e}^{n_{el}} \delta \mathbf{P}_{e}^{\text{T}} \underbrace{\left( \rho \int_{\Gamma_{1}^{e}} \mathbf{N}_{F}^{\text{T}} {\dot{u}}_{n_{F,h}} d\Gamma \right)}_{\mathbf{R}_{F,h}^{e}} \\
+      & + \sum_{e}^{n_{el}} \delta \mathbf{P}_{e}^{\text{T}} \underbrace{\left( \rho \int_{\Gamma_{2}^{e}} \mathbf{N}_{F}^{\text{T}} {\dot{u}}_{n_{F,b}} d\Gamma \right)}_{\mathbf{R}_{F,b}^{e}} \\
+      & + \cdots \\
+      & \cdots + \sum_{e}^{n_{el}} \delta \mathbf{P}_{e}^{\text{T}} \underbrace{\left( \frac{1}{c} \left( \frac{1-\alpha }{1+\alpha } \right) \int_{\Gamma_{2}^{e}} \mathbf{N}_{F}^{\text{T}} \mathbf{N}_{F} d\Gamma \right)}_{\mathbf{C}_{F,b}^{e}} {\mathbf{\dot{P}}}_{e} \\
+      & + \sum_{e}^{n_{el}} \delta \mathbf{P}_{e}^{\text{T}} \underbrace{\left( \frac{1}{g} \int_{\Gamma_{3}^{e}} \mathbf{N}_{F}^{\text{T}} \mathbf{N}_{F} d\Gamma \right)}_{\mathbf{W}_{F}^{e}} {\mathbf{\ddot{P}}}_{e} \\
+      & + \sum_{e}^{n_{el}} \delta \mathbf{P}_{e}^{\text{T}} \underbrace{\left( \frac{1}{c} \int_{\Gamma_{4}^{e}} \mathbf{N}_{F}^{\text{T}} \mathbf{N}_{F} d\Gamma \right)}_{\mathbf{C}_{F,r}^{e}} {\mathbf{\dot{P}}}_{e} = 0
+   \end{align*}
+   \right.\ 
 
 .. admonition:: Example 
 
