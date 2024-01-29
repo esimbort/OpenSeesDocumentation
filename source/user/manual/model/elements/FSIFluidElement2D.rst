@@ -37,10 +37,7 @@ Theory
 |  The water is modeled as a linear inviscid, irrotational, and compressible fluid with hydrodynamic pressures p governed by the acoustic wave equation:	
 
 .. math::
-
-\nabla^2 p = \frac{1}{c^2} \frac{\partial^2 p}{\partial t^2}  
-
-.. math::
+   \nabla^2 p = \frac{1}{c^2} \frac{\partial^2 p}{\partial t^2}  
    m_{t_i} &= \sum_{n=1}^{Nnodes} LM_{ni}\\
    m_{f_i} &= \sum_{n=1}^{Nnodes} LM_{ni}\quad(\text{if}\:i = free)\\
    CoM_i &= \frac{\sum_{n=1}^{Nnodes} X_{ni} \cdot LM_{ni}}{m_{f_i}} \quad(\text{if}\:i = free)
