@@ -45,13 +45,6 @@ Theory
    m_{f_i} &= \sum_{n=1}^{Nnodes} LM_{ni}\quad(\text{if}\:i = free)\\
    CoM_i &= \frac{\sum_{n=1}^{Nnodes} X_{ni} \cdot LM_{ni}}{m_{f_i}} \quad(\text{if}\:i = free)
 
-Theory
-^^^^^^
-|  The eigenvalues :math:`\lambda` and the eigenvectors :math:`\Phi` can be obtained after solving the *generalized eigenvalue problem* for two symmetric matrices :math:`K` (stiffness) and :math:`M` (mass) given by:
-
-.. math::
-   \left (K - \lambda M \right ) \Phi = 0
-
 .. admonition:: Example 
 
    1. **Tcl Code**
