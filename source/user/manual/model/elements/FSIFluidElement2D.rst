@@ -70,6 +70,17 @@ Theory
       & + \sum_{e}^{n_{el}} \delta \mathbf{P}_{e}^{\text{T}} \underbrace{\left( \frac{1}{c} \int_{\Gamma_{4}^{e}} \mathbf{N}_{F}^{\text{T}} \mathbf{N}_{F} d\Gamma \right)}_{\mathbf{C}_{F,r}^{e}} {\mathbf{\dot{P}}}_{e} = 0
    \end{align*}
    \right.\ 
+   
+| The element stiffness matrix:
+.. math::
+
+   \mathbf{K}_{F}^{e} = \int_{\Omega^{e}} {\left( \nabla \mathbf{N}_{F} \right)}^{\text{T}} \nabla \mathbf{N}_{F} \, d\Omega
+   
+| The element mass matrix:   
+.. math::
+
+   \mathbf{M}_{F}^{e} = \frac{1}{{c}^{2}} \int_{\Omega^{e}} \mathbf{N}_{F}^{\text{T}} \mathbf{N}_{F} \, d\Omega
+   
 
 .. admonition:: Example 
 
