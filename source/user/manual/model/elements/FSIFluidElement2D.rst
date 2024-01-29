@@ -36,7 +36,7 @@ Theory
 ^^^^^^ 
 |  The water is modeled as a linear inviscid, irrotational, and compressible fluid with hydrodynamic pressures p governed by the acoustic wave equation:	
 .. math::
-   \[{{\nabla }^{\text{2}}}p=\frac{1}{{{c}^{2}}}\frac{{{\partial }^{2}}p}{\partial {{t}^{2}}}\]   
+|   \[{{\nabla }^{\text{2}}}p=\frac{1}{{{c}^{2}}}\frac{{{\partial }^{2}}p}{\partial {{t}^{2}}}\]   
 
 .. admonition:: Example 
 
@@ -57,7 +57,7 @@ Theory
       
       # record added hydrodynamic pressures at element nodes (4 columns, 1 for each node)
       recorder Element  -xml  pressure_out.xml  -ele  1  pressure
-	  # record first time derivative of added hydrodynamic pressures at element nodes (4 columns, 1 for each node)
+      # record first time derivative of added hydrodynamic pressures at element nodes (4 columns, 1 for each node)
       recorder Element  -xml  pressureVel_out.xml  -ele  1  pressureVel
 
    2. **Python Code**
