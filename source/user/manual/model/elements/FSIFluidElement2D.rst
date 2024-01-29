@@ -41,6 +41,12 @@ Theory
    m_{f_i} &= \sum_{n=1}^{Nnodes} LM_{ni}\quad(\text{if}\:i = free)\\
    CoM_i &= \frac{\sum_{n=1}^{Nnodes} X_{ni} \cdot LM_{ni}}{m_{f_i}} \quad(\text{if}\:i = free)
 
+.. math::
+
+   \nabla \cdot \mathbf{E} = \frac{\rho}{\epsilon_0}
+
+   \nabla \cdot \mathbf{B} = 0
+
 .. admonition:: Example 
 
    1. **Tcl Code**
