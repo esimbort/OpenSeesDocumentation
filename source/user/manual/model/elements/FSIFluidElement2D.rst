@@ -35,8 +35,10 @@ This command is used to construct an FSIFluidElement2D element object. The FSIFl
 Theory
 ^^^^^^ 
 |  The water is modeled as a linear inviscid, irrotational, and compressible fluid with hydrodynamic pressures p governed by the acoustic wave equation:	
+
 .. math::
-\nabla^2 p 
+
+\nabla^2 p = \frac{1}{c^2} \frac{\partial^2 p}{\partial t^2}  
 
 
 
