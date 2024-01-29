@@ -52,7 +52,7 @@ Theory
       node 4  0.0  1.0
       
       # create the acoustic element with speed of pressure waves in water, c = 1.440000e+03
-      set cc 1.440000e+03
+      \set cc 1.440000e+03
       element FSIFluidElement2D  1  1 2 3 4  $cc
       
       # record added hydrodynamic pressures at element nodes (4 columns, 1 for each node)
