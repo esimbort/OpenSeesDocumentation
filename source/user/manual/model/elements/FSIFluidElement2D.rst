@@ -40,7 +40,10 @@ Theory
 
 \nabla^2 p = \frac{1}{c^2} \frac{\partial^2 p}{\partial t^2}  
 
-
+.. math::
+   m_{t_i} &= \sum_{n=1}^{Nnodes} LM_{ni}\\
+   m_{f_i} &= \sum_{n=1}^{Nnodes} LM_{ni}\quad(\text{if}\:i = free)\\
+   CoM_i &= \frac{\sum_{n=1}^{Nnodes} X_{ni} \cdot LM_{ni}}{m_{f_i}} \quad(\text{if}\:i = free)
 
 .. admonition:: Example 
 
