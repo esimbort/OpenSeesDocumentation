@@ -30,7 +30,7 @@ This command is used to construct an FSIFluidElement2D element object. The FSIFl
    Valid queries to the FSIFluidElement2D element when creating an ElementRecorder object are:
    
    *  '**pressure**', '**pressureVel**', '**pressureAccel**':
-       *  Added hydrodynamic pressure and its first and second time derivatives.
+   *  Added hydrodynamic pressure and its first and second time derivatives.
 	   
 Theory
 ^^^^^^ 
