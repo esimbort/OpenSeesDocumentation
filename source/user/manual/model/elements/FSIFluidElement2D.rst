@@ -34,21 +34,24 @@ This command is used to construct an FSIFluidElement2D element object. The FSIFl
 	   
 Theory
 ^^^^^^ 
-|  The water is modeled as a linear inviscid, irrotational, and compressible fluid with hydrodynamic pressures p governed by the acoustic wave equation:	
+|  The water is modeled as a linear inviscid, irrotational, and compressible fluid with hydrodynamic pressures p governed by the Helmholtz acoustic wave equation:	
 
 .. math::
    \nabla^2 p = \frac{1}{c^2} \frac{\partial^2 p}{\partial t^2}
-
+   
+|  where
 .. math::
-   m_{t_i} &= \sum_{n=1}^{Nnodes} LM_{ni}\\
-   m_{f_i} &= \sum_{n=1}^{Nnodes} LM_{ni}\quad(\text{if}\:i = free)\\
-   CoM_i &= \frac{\sum_{n=1}^{Nnodes} X_{ni} \cdot LM_{ni}}{m_{f_i}} \quad(\text{if}\:i = free)
+   c = \sqrt{\frac{K}{\rho}}
+|  denotes the speed of sound in the fluid.
 
+|  The strong form of the fluid-structure interaction (Class I problem) is given as:
 .. math::
 
-   \nabla \cdot \mathbf{E} = \frac{\rho}{\epsilon_0}
-
-   \nabla \cdot \mathbf{B} = 0
+   \left( \text{S} \right)\quad \left\{ \begin{array}{ll}
+   \nabla^2 p = \frac{1}{c^2} \ddot{p} & \text{in } \Omega \\
+   \frac{\partial p}{\partial n} = -\rho \dot{u}_n & \text{on } \Gamma_n \\
+   \end{array} \right.
+ 
 
 .. admonition:: Example 
 
