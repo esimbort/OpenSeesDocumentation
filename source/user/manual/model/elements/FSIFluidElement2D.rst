@@ -34,10 +34,8 @@ This command is used to construct an FSIFluidElement2D element object. The FSIFl
 	   
 Theory
 ^^^^^^ 
-
 Fluid behavior. Wave equation
 -----------------------------
-
 |  The water is modeled as a linear inviscid, irrotational, and compressible fluid with hydrodynamic pressures p governed by the Helmholtz acoustic wave equation:	
 
 .. math::
@@ -50,7 +48,6 @@ Fluid behavior. Wave equation
 
 Boundary conditions. Coupling and Radiation
 -------------------------------------------
-
 | We focus on the fluid-structure interaction (Class I problem), according to [ZienkiewiczEtAl2000]_ .
 .. figure:: FSIProblem_geometry.png
 	:align: center
@@ -75,7 +72,10 @@ Boundary conditions. Coupling and Radiation
 
    \rho \, \mathbf{n}_{F,\,b}^{\text{T}} \mathbf{\ddot{w}}^{s} + \frac{1}{c} \left( \frac{1-\alpha}{1-\alpha} \right) \dot{p} = -\frac{\partial p}{\partial {n_{F,\,b}}}
 | On solid boundary 3:
-| On the free surface we can take either p = 0 or p = \rho g \eta
+| On the free surface, we can take either :math:`p=0` or :math:`p=\rho g\eta`. The latter accounts for surface gravity waves, where :math:`\eta` is the elevation relative to the surface mean surface and :math: `g` is the acceleration due to gravity.
+
+
+
 
 | The wave equation is to be solved in a volume \Omega_F, subject to boundary conditions on its surface \Gamma_n, leading to the follwing strong form for the fluid:
 .. math::
