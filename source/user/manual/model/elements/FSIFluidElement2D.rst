@@ -25,6 +25,10 @@ This command is used to construct an FSIFluidElement2D element object. The FSIFl
 
 	Nodes, Gauss points, local coordinate system
 
+.. figure:: FSIProblem_geometry.png
+	:align: center
+	:figclass: align-center	
+
 .. note::
 
    Valid queries to the FSIFluidElement2D element when creating an ElementRecorder object are:
