@@ -73,10 +73,6 @@ Boundary conditions. Coupling and Radiation
    \rho \, \mathbf{n}_{F,\,b}^{\text{T}} \mathbf{\ddot{w}}^{s} + \frac{1}{c} \left( \frac{1-\alpha}{1-\alpha} \right) \dot{p} = -\frac{\partial p}{\partial {n_{F,\,b}}}
 | On solid boundary 3:
 | On the free surface, we can take either :math:`p=0` or :math:`p=\rho g\eta`. The latter accounts for surface gravity waves, where :math:`\eta` is the elevation relative to the surface mean surface and :math: `g` is the acceleration due to gravity.
-
-
-
-
 | The wave equation is to be solved in a volume \Omega_F, subject to boundary conditions on its surface \Gamma_n, leading to the follwing strong form for the fluid:
 .. math::
 
