@@ -54,7 +54,7 @@ Boundary conditions. Coupling and Radiation
 	:figclass: align-center	
 	:width: 40%
 | The appropriate boundary conditions can now be imposed and linkage with the structural equations achieved. Therefore,
-| On solid boundary 1:
+| On boundary 1: "Solid boundary"
 .. math::
 
    {{\dot{\bar{u}}}_{{n_{F,\,h}}}} = \ddot{w}_{{n_{F,\,h}}}^{s} = \mathbf{n}_{F,\,h}^{\text{T}} \mathbf{\ddot{w}}^{s}
@@ -63,7 +63,7 @@ Boundary conditions. Coupling and Radiation
 
    \rho \, \mathbf{n}_{F,\,h}^{\text{T}} \mathbf{\ddot{w}}^{s} = -\frac{\partial p}{\partial {n_{F,\,h}}}
 
-| On solid boundary 2:
+| On boundary 2: "Solid boundary"
 .. math::
 
    {{\dot{\bar{u}}}_{{n_{F,\,b}}}} = \ddot{w}_{{n_{F,\,b}}}^{s} = \mathbf{n}_{F,\,b}^{\text{T}} \mathbf{\ddot{w}}^{s}
@@ -71,9 +71,19 @@ Boundary conditions. Coupling and Radiation
 .. math::
 
    \rho \, \mathbf{n}_{F,\,b}^{\text{T}} \mathbf{\ddot{w}}^{s} + \frac{1}{c} \left( \frac{1-\alpha}{1-\alpha} \right) \dot{p} = -\frac{\partial p}{\partial {n_{F,\,b}}}
-| On solid boundary 3:
-| On the free surface, we can take either :math:`p=0` or :math:`p=\rho g\eta`. The latter accounts for surface gravity waves, where :math:`\eta` is the elevation relative to the surface mean surface and :math:`g` is the acceleration due to gravity.
-| The wave equation is to be solved in a volume \Omega_F, subject to boundary conditions on its surface \Gamma_n, leading to the follwing strong form for the fluid:
+| On boundary 3: "Free surface boundary"
+| On the free surface the selected assumption is :math:`p=\rho g\eta`, which accounts for surface gravity waves, where :math:`\eta` is the elevation relative to the surface mean surface and :math:`g` is the acceleration due to gravity.
+| This assumptions leads to the linearized free surface wave condition:
+.. math::
+
+   \frac{\partial p}{\partial z} = -\frac{1}{g} \frac{\partial^2 p}{\partial t^2} = -\frac{1}{g} \ddot{p}
+| On boundary 4: "Radiation boundary"
+| The solution of the wave equation is composed of outgoing waves only: :math:`p = f(x - ct)`. Thus :math:`\frac{\partial p}{\partial n} \equiv \frac{\partial p}{\partial x} = f'` and :math:`\frac{\partial p}{\partial t} = -c \, f'`. By eliminating :math:`f'` we get 
+.. math::
+
+   \frac{\partial p}{\partial x} = -\frac{1}{c} \frac{\partial p}{\partial t}
+| This relation is known as the Sommerfeld radiation condition. 
+| The wave equation is to be solved in a volume :math:`\Omega_F`, subject to boundary conditions on its surface :math:`\Gamma_n`, leading to the following strong form for the fluid:
 .. math::
 
    \left( \text{S} \right)\quad \left\{ \begin{array}{ll}
