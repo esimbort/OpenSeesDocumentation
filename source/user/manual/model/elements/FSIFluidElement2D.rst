@@ -28,7 +28,7 @@ This command is used to construct an FSIFluidElement2D element object. The FSIFl
 .. figure:: FSIProblem_geometry.png
 	:align: center
 	:figclass: align-center	
-	:width: 45%
+	:width: 40%
 
 .. note::
 
