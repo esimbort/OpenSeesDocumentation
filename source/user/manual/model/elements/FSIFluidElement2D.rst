@@ -25,11 +25,6 @@ This command is used to construct an FSIFluidElement2D element object. The FSIFl
 
 	Nodes, Gauss points, local coordinate system
 
-.. figure:: FSIProblem_geometry.png
-	:align: center
-	:figclass: align-center	
-	:width: 40%
-
 .. note::
 
    Valid queries to the FSIFluidElement2D element when creating an ElementRecorder object are:
@@ -39,6 +34,8 @@ This command is used to construct an FSIFluidElement2D element object. The FSIFl
 	   
 Theory
 ^^^^^^ 
+Fluid behavior. Wave equation
+-----------------------------
 |  The water is modeled as a linear inviscid, irrotational, and compressible fluid with hydrodynamic pressures p governed by the Helmholtz acoustic wave equation:	
 
 .. math::
@@ -47,15 +44,48 @@ Theory
 |  where
 .. math::
    c = \sqrt{\frac{K}{\rho}}
-|  denotes the speed of sound in the fluid.
+|  denotes the speed of sound in the fluid, K and \rho are the bulk modulus and the mass density of the fluid, respectively.
 
-|  The strong form of the fluid-structure interaction (Class I problem) is given as:
+Boundary conditions. Coupling and Radiation
+-------------------------------------------
+| We focus on the fluid-structure interaction (Class I problem), according to [ZienkiewiczEtAl2000]_ .
+.. figure:: FSIProblem_geometry.png
+	:align: center
+	:figclass: align-center	
+	:width: 40%
+| The appropriate boundary conditions can now be imposed and linkage with the structural equations achieved. Therefore,
+| On solid boundary 1:
+.. math::
+
+   {{\dot{\bar{u}}}_{{n_{F,\,h}}}} = \ddot{w}_{{n_{F,\,h}}}^{s} = \mathbf{n}_{F,\,h}^{\text{T}} \mathbf{\ddot{w}}^{s}
+| which leads to
+.. math::
+
+   \rho \, \mathbf{n}_{F,\,h}^{\text{T}} \mathbf{\ddot{w}}^{s} = -\frac{\partial p}{\partial {n_{F,\,h}}}
+
+| On solid boundary 2:
+.. math::
+
+   {{\dot{\bar{u}}}_{{n_{F,\,b}}}} = \ddot{w}_{{n_{F,\,b}}}^{s} = \mathbf{n}_{F,\,b}^{\text{T}} \mathbf{\ddot{w}}^{s}
+| leading to
+.. math::
+
+   \rho \, \mathbf{n}_{F,\,b}^{\text{T}} \mathbf{\ddot{w}}^{s} + \frac{1}{c} \left( \frac{1-\alpha}{1-\alpha} \right) \dot{p} = -\frac{\partial p}{\partial {n_{F,\,b}}}
+| On solid boundary 3:
+| On the free surface we can take either p = 0 or p = \rho g \eta
+
+
+
+
+
+| The wave equation is to be solved in a volume \Omega_F, subject to boundary conditions on its surface \Gamma_n, leading to the follwing strong form for the fluid:
 .. math::
 
    \left( \text{S} \right)\quad \left\{ \begin{array}{ll}
    \nabla^2 p = \frac{1}{c^2} \ddot{p} & \text{in } \Omega \\
    \frac{\partial p}{\partial n} = -\rho \dot{u}_n & \text{on } \Gamma_n \\
    \end{array} \right.
+   
 | After multiplication by a weight function, integration by parts, application of the divergence theorem and susbstitution of BCs the weak form is shown below:
 .. math::
 
@@ -86,7 +116,6 @@ Theory
 
    \mathbf{M}_{F}^{e} = \frac{1}{{c}^{2}} \int_{\Omega^{e}} \mathbf{N}_{F}^{\text{T}} \mathbf{N}_{F} \, d\Omega
    
-
 .. admonition:: Example 
 
    1. **Tcl Code**
