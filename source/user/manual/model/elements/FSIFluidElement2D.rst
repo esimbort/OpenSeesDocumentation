@@ -1,37 +1,35 @@
-.. _FSIFluidElement2D:
+.. _FSIFluidBoundaryElement2D:
 
-FSIFluidElement2D Element
-^^^^^^^^^^^^^^^^^^^^^^^^^
+FSIFluidBoundaryElement2D Element
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-This command is used to construct an FSIFluidElement2D element object. The FSIFluidElement2D element is a 4-node bilinear acoustic element with the following features:
+This command is used to construct an FSIFluidBoundaryElement2D element object. The FSIFluidBoundaryElement2D element is a 2-node linear acoustic boundary element object with the following features:
 
 #. It is based on Eulerian pressure formulation [ZienkiewiczEtAl1978]_ , [ZienkiewiczEtAl2000]_ , [LøkkeEtAl2017]_ , for (Class I) fluid-structure interaction problem.
-#. It uses a full 2x2 Gauss quadrature, so it has a total of 4 integration points.
+#. It uses a 2 inetgration points Gauss quadrature.
+#. Depending on the input variables, it enables the implementation of radiation boundary, reservoir bottom absorption or free surface effects.
 
-.. function:: element FSIFluidElement2D $eleTag $n1 $n2 $n3 $n4 $cc
+.. function:: element FSIFluidBoundaryElement2D $eleTag $n1 $n2 $cc $alpha $g <-thickness $thickness>
 
 .. csv-table:: 
    :header: "Argument", "Type", "Description"
    :widths: 10, 10, 40
 
    $eleTag, |integer|, unique integer tag identifying element object
-   $n1 $n2 $n3 $n4, 4 |integer|, the four nodes defining the element (-ndm 2 -ndf 1)
+   $n1 $n2, 2 |integer|, the two nodes defining the element (-ndm 2 -ndf 1)
    $cc, |float|, speed of pressure waves in water
+   $alpha, |float|, reservoir bottom reflection coefficient [LøkkeEtAl2017]_
+   $g, |float|, acceleration due to gravity
+   Optional:
+   $thickness, |float|, the thickness in 2D problems (default 1.0).
 
-
-.. figure:: FSIFluidElement2D_geometry.png
+.. figure:: FSIFluidBoundaryElement2D_geometry.png
 	:align: center
 	:figclass: align-center
+	:width: 40%
 
 	Nodes, Gauss points, local coordinate system
-
-.. note::
-
-   Valid queries to the FSIFluidElement2D element when creating an ElementRecorder object are:
-   
-   *  '**pressure**', '**pressureVel**', '**pressureAccel**':
-       *  Added hydrodynamic pressure and its first and second time derivatives.
-	   
+	
 Theory
 ^^^^^^ 
 Fluid behavior. Wave equation
@@ -111,17 +109,19 @@ Boundary conditions. Coupling and Radiation
    \end{align*}
    \right.\ 
    
-| The element stiffness matrix:
+| The acoustic element stiffness matrix:
 .. math::
 
    \mathbf{K}_{F}^{e} = \int_{\Omega^{e}} {\left( \nabla \mathbf{N}_{F} \right)}^{\text{T}} \nabla \mathbf{N}_{F} \, d\Omega
    
-| The element mass matrix:   
+| The acoustic element mass matrix:   
 .. math::
 
    \mathbf{M}_{F}^{e} = \frac{1}{{c}^{2}} \int_{\Omega^{e}} \mathbf{N}_{F}^{\text{T}} \mathbf{N}_{F} \, d\Omega
    
 .. admonition:: Example 
+
+| Three cases of valid inputs are shown below: 1. Radiation boundary, 2. Reservoir bottom absorption and 3. Surface waves effects.
 
    1. **Tcl Code**
 
