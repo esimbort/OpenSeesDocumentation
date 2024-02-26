@@ -69,7 +69,7 @@ Boundary conditions. Coupling and Radiation
 .. figure:: BC1b.png
 	:align: center
 	:figclass: align-center	
-	:width: 15%
+	:width: 12%
 
 | On boundary 2: "Solid boundary"
 .. math::
