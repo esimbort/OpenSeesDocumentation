@@ -59,26 +59,22 @@ Boundary conditions. Coupling and Radiation
 	:width: 40%
 | The appropriate boundary conditions can now be imposed and linkage with the structural equations achieved. Therefore,
 | On boundary 1: "Solid boundary"
-.. math::
 .. figure:: BC1a.png
 	:align: center
 	:figclass: align-center	
 	:width: 15%
 | which leads to
-.. math::
 .. figure:: BC1b.png
 	:align: center
 	:figclass: align-center	
 	:width: 12%
 
 | On boundary 2: "Solid boundary"
-.. math::
 .. figure:: BC2a.png
 	:align: center
 	:figclass: align-center	
 	:width: 17%
 | leading to
-.. math::
 .. figure:: BC2b.png
 	:align: center
 	:figclass: align-center	
@@ -86,16 +82,26 @@ Boundary conditions. Coupling and Radiation
 | On boundary 3: "Free surface boundary"
 | On the free surface the selected assumption is :math:`p=\rho g\eta`, which accounts for surface gravity waves, where :math:`\eta` is the elevation relative to the surface mean surface and :math:`g` is the acceleration due to gravity.
 | This assumptions leads to the linearized free surface wave condition:
-.. math::
 .. figure:: BC3a.png
 	:align: center
 	:figclass: align-center	
 	:width: 15%
 | On boundary 4: "Radiation boundary"
-| The solution of the wave equation is composed of outgoing waves only: :math:`p = f(x - ct)`. Thus :math:`\frac{\partial p}{\partial n} \equiv \frac{\partial p}{\partial x} = f'` and :math:`\frac{\partial p}{\partial t} = -c \, f'`. By eliminating :math:`f'` we get 
-.. math::
-
-   \frac{\partial p}{\partial x} = -\frac{1}{c} \frac{\partial p}{\partial t}
+| The solution of the wave equation is composed of outgoing waves only: :math:`p = f(x - ct)`. Thus
+.. figure:: BC4a.png
+	:align: center
+	:figclass: align-center	
+	:width: 15%
+| and
+.. figure:: BC4b.png
+	:align: center
+	:figclass: align-center	
+	:width: 15%
+| By eliminating :math:`f'` we get 
+.. figure:: BC4c.png
+	:align: center
+	:figclass: align-center	
+	:width: 15%
 | This relation is known as the Sommerfeld radiation condition. 
 | The wave equation is to be solved in a volume :math:`\Omega_F`, subject to boundary conditions on its surface :math:`\Gamma_n`, leading to the following strong form for the fluid:
 .. math::
