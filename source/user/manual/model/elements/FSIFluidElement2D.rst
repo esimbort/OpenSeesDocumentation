@@ -41,7 +41,7 @@ Fluid behavior. Wave equation
    
 |  where
 .. math::
-   c = \sqrt{\frac{K}{\rho}}
+   c = sqrt{\frac{K}{\rho}}
 |  denotes the speed of sound in the fluid, K and \rho are the bulk modulus and the mass density of the fluid, respectively.
 
 Boundary conditions. Coupling and Radiation
