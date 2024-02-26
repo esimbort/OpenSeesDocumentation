@@ -40,7 +40,7 @@ Fluid behavior. Wave equation
 .. figure:: Helmholtz.png
 	:align: center
 	:figclass: align-center	
-	:width: 5%
+	:width: 10%
    
 |  where
 .. math::
