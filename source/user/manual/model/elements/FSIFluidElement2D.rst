@@ -36,14 +36,12 @@ Fluid behavior. Wave equation
 -----------------------------
 |  The water is modeled as a linear inviscid, irrotational, and compressible fluid with hydrodynamic pressures p governed by the Helmholtz acoustic wave equation:	
 
-.. math::
 .. figure:: Helmholtz.png
 	:align: center
 	:figclass: align-center	
 	:width: 10%
    
 |  where
-.. math::
 .. figure:: WaveVel.png
 	:align: center
 	:figclass: align-center	
