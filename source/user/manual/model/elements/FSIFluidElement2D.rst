@@ -84,11 +84,13 @@ Boundary conditions. Coupling and Radiation
 	:figclass: align-center	
 	:width: 20%
 | On boundary 3: "Free surface boundary"
-| On the free surface the selected assumption is :math:`p=\rho g\eta`, which accounts for surface gravity waves, where :math:`\eta` is the elevation relative to the surface mean surface and :math:`g` is the acceleration due to gravity.
+| On the free surface the selected assumption is :math:`p=\rho g\eta`, which accounts for surface gravity waves, where :math:`$\eta$` is the elevation relative to the surface mean surface and :math:`g` is the acceleration due to gravity.
 | This assumptions leads to the linearized free surface wave condition:
 .. math::
-
-   \frac{\partial p}{\partial z} = -\frac{1}{g} \frac{\partial^2 p}{\partial t^2} = -\frac{1}{g} \ddot{p}
+.. figure:: BC3a.png
+	:align: center
+	:figclass: align-center	
+	:width: 15%
 | On boundary 4: "Radiation boundary"
 | The solution of the wave equation is composed of outgoing waves only: :math:`p = f(x - ct)`. Thus :math:`\frac{\partial p}{\partial n} \equiv \frac{\partial p}{\partial x} = f'` and :math:`\frac{\partial p}{\partial t} = -c \, f'`. By eliminating :math:`f'` we get 
 .. math::
