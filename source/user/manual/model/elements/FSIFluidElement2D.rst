@@ -63,20 +63,20 @@ Boundary conditions. Coupling and Radiation
 .. figure:: BC1a.png
 	:align: center
 	:figclass: align-center	
-	:width: 20%
+	:width: 10%
 | which leads to
 .. math::
 .. figure:: BC1b.png
 	:align: center
 	:figclass: align-center	
-	:width: 20%
+	:width: 10%
 
 | On boundary 2: "Solid boundary"
 .. math::
 .. figure:: BC2a.png
 	:align: center
 	:figclass: align-center	
-	:width: 20%
+	:width: 15%
 | leading to
 .. math::
 .. figure:: BC2b.png
