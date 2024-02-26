@@ -89,17 +89,17 @@ Boundary conditions. Coupling and Radiation
 .. figure:: BC4a.png
 	:align: center
 	:figclass: align-center	
-	:width: 8%
+	:width: 9%
 | and
 .. figure:: BC4b.png
 	:align: center
 	:figclass: align-center	
-	:width: 8%
+	:width: 9%
 | By eliminating :math:`f'` we get 
 .. figure:: BC4c.png
 	:align: center
 	:figclass: align-center	
-	:width: 8%
+	:width: 9%
 | This relation is known as the Sommerfeld radiation condition. 
 | The wave equation is to be solved in a volume :math:`\Omega_F`, subject to boundary conditions on its surface :math:`\Gamma_n`, leading to the following strong form for the fluid:
 .. math::
