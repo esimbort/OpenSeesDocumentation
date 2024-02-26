@@ -63,26 +63,26 @@ Boundary conditions. Coupling and Radiation
 .. figure:: BC1a.png
 	:align: center
 	:figclass: align-center	
-	:width: 5%
+	:width: 75%
 | which leads to
 .. math::
 .. figure:: BC1b.png
 	:align: center
 	:figclass: align-center	
-	:width: 5%
+	:width: 25%
 
 | On boundary 2: "Solid boundary"
 .. math::
 .. figure:: BC2a.png
 	:align: center
 	:figclass: align-center	
-	:width: 5%
+	:width: 20%
 | leading to
 .. math::
 .. figure:: BC2b.png
 	:align: center
 	:figclass: align-center	
-	:width: 5%
+	:width: 50%
 | On boundary 3: "Free surface boundary"
 | On the free surface the selected assumption is :math:`p=\rho g\eta`, which accounts for surface gravity waves, where :math:`\eta` is the elevation relative to the surface mean surface and :math:`g` is the acceleration due to gravity.
 | This assumptions leads to the linearized free surface wave condition:
