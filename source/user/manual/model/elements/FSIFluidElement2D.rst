@@ -105,7 +105,7 @@ Boundary conditions. Coupling and Radiation
 .. figure:: S_form.png
 	:align: center
 	:figclass: align-center	
-	:width: 15%
+	:width: 20%
 | After multiplication by a weight function, integration by parts, application of the divergence theorem and susbstitution of BCs the weak form is shown below:
 .. figure:: W_form.png
 	:align: center
