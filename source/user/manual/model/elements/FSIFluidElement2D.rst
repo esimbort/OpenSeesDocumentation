@@ -37,7 +37,10 @@ Fluid behavior. Wave equation
 |  The water is modeled as a linear inviscid, irrotational, and compressible fluid with hydrodynamic pressures p governed by the Helmholtz acoustic wave equation:	
 
 .. math::
-   \nabla^2 p = \frac{1}{c^2} \frac{\partial^2 p}{\partial t^2}
+.. figure:: Helmholtz.png
+	:align: center
+	:figclass: align-center	
+	:width: 5%
    
 |  where
 .. math::
@@ -57,21 +60,29 @@ Boundary conditions. Coupling and Radiation
 | The appropriate boundary conditions can now be imposed and linkage with the structural equations achieved. Therefore,
 | On boundary 1: "Solid boundary"
 .. math::
-
-   {{\dot{\bar{u}}}_{{n_{F,\,h}}}} = \ddot{w}_{{n_{F,\,h}}}^{s} = \mathbf{n}_{F,\,h}^{\text{T}} \mathbf{\ddot{w}}^{s}
+.. figure:: BC1a.png
+	:align: center
+	:figclass: align-center	
+	:width: 5%
 | which leads to
 .. math::
-
-   \rho \, \mathbf{n}_{F,\,h}^{\text{T}} \mathbf{\ddot{w}}^{s} = -\frac{\partial p}{\partial {n_{F,\,h}}}
+.. figure:: BC1b.png
+	:align: center
+	:figclass: align-center	
+	:width: 5%
 
 | On boundary 2: "Solid boundary"
 .. math::
-
-   {{\dot{\bar{u}}}_{{n_{F,\,b}}}} = \ddot{w}_{{n_{F,\,b}}}^{s} = \mathbf{n}_{F,\,b}^{\text{T}} \mathbf{\ddot{w}}^{s}
+.. figure:: BC2a.png
+	:align: center
+	:figclass: align-center	
+	:width: 5%
 | leading to
 .. math::
-
-   \rho \, \mathbf{n}_{F,\,b}^{\text{T}} \mathbf{\ddot{w}}^{s} + \frac{1}{c} \left( \frac{1-\alpha}{1-\alpha} \right) \dot{p} = -\frac{\partial p}{\partial {n_{F,\,b}}}
+.. figure:: BC2b.png
+	:align: center
+	:figclass: align-center	
+	:width: 5%
 | On boundary 3: "Free surface boundary"
 | On the free surface the selected assumption is :math:`p=\rho g\eta`, which accounts for surface gravity waves, where :math:`\eta` is the elevation relative to the surface mean surface and :math:`g` is the acceleration due to gravity.
 | This assumptions leads to the linearized free surface wave condition:
