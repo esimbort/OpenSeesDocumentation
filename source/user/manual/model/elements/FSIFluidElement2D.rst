@@ -113,7 +113,7 @@ Boundary conditions. Coupling and Radiation
 .. figure:: W_form.png
 	:align: center
 	:figclass: align-center	
-	:width: 80%
+	:width: 70%
 | Standard Galerkin discretization applied to the weak form leads to
 .. math::
 
