@@ -102,13 +102,10 @@ Boundary conditions. Coupling and Radiation
 	:width: 9%
 | This relation is known as the Sommerfeld radiation condition. 
 | The wave equation is to be solved in a volume :math:`\Omega_F`, subject to boundary conditions on its surface :math:`\Gamma_n`, leading to the following strong form for the fluid:
-.. math::
-
-   \left( \text{S} \right)\quad \left\{ \begin{array}{ll}
-   \nabla^2 p = \frac{1}{c^2} \ddot{p} & \text{in } \Omega \\
-   \frac{\partial p}{\partial n} = -\rho \dot{u}_n & \text{on } \Gamma_n \\
-   \end{array} \right.
-   
+.. figure:: S_form.png
+	:align: center
+	:figclass: align-center	
+	:width: 75%
 | After multiplication by a weight function, integration by parts, application of the divergence theorem and susbstitution of BCs the weak form is shown below:
 .. figure:: W_form.png
 	:align: center
