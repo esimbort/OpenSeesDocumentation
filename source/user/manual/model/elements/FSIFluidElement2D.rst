@@ -110,9 +110,10 @@ Boundary conditions. Coupling and Radiation
    \end{array} \right.
    
 | After multiplication by a weight function, integration by parts, application of the divergence theorem and susbstitution of BCs the weak form is shown below:
-.. math::
-
-   \left( \text{W} \right)\left\{ \int_{\Omega_F} \delta p \left( {\left( \nabla \right)}^{\text{T}} \nabla p + \frac{1}{{c}^{2}} \ddot{p} \right) d\Omega + \rho \int_{\Gamma_1} \delta p \dot{u}_{n_{F,h}} d\Gamma + \rho \int_{\Gamma_2} \delta p \dot{u}_{n_{F,b}} d\Gamma + \frac{1}{c} \left( \frac{1 - \alpha}{1 + \alpha} \right) \int_{\Gamma_2} \delta p \dot{p} d\Gamma + \frac{1}{g} \int_{\Gamma_3} \delta p \ddot{p} d\Gamma + \frac{1}{c} \int_{\Gamma_4} \delta p \dot{p} d\Gamma = 0 \ \ (4.14) \right.
+.. figure:: W_form.png
+	:align: center
+	:figclass: align-center	
+	:width: 10%
 | Standard Galerkin discretization applied to the weak form leads to
 .. math::
 
