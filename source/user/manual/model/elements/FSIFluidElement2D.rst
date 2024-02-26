@@ -60,7 +60,7 @@ Boundary conditions. Coupling and Radiation
 .. figure:: BC1a.png
 	:align: center
 	:figclass: align-center	
-	:width: 20%
+	:width: 22%
 | which leads to
 .. figure:: BC1b.png
 	:align: center
@@ -71,7 +71,7 @@ Boundary conditions. Coupling and Radiation
 .. figure:: BC2a.png
 	:align: center
 	:figclass: align-center	
-	:width: 17%
+	:width: 25%
 | leading to
 .. figure:: BC2b.png
 	:align: center
