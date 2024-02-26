@@ -44,7 +44,7 @@ Fluid behavior. Wave equation
 .. figure:: WaveVel.png
 	:align: center
 	:figclass: align-center	
-	:width: 5%
+	:width: 10%
 |  denotes the speed of sound in the fluid, K and \rho are the bulk modulus and the mass density of the fluid, respectively.
 
 Boundary conditions. Coupling and Radiation
