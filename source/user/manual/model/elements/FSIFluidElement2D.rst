@@ -84,7 +84,7 @@ Boundary conditions. Coupling and Radiation
 	:figclass: align-center	
 	:width: 20%
 | On boundary 3: "Free surface boundary"
-| On the free surface the selected assumption is .. image:: P_rho_g_eta.png , which accounts for surface gravity waves, where :math:`\eta` is the elevation relative to the surface mean surface and :math:`g` is the acceleration due to gravity.
+| On the free surface the selected assumption is <img src="P_rho_g_eta.png" alt="Figure of P" /> , which accounts for surface gravity waves, where :math:`\eta` is the elevation relative to the surface mean surface and :math:`g` is the acceleration due to gravity.
 | This assumptions leads to the linearized free surface wave condition:
 .. math::
 .. figure:: BC3a.png
