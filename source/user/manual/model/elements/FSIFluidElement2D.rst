@@ -23,7 +23,7 @@ This command is used to construct an FSIFluidBoundaryElement2D element object. T
    Optional:
    $thickness, |float|, the thickness in 2D problems (default 1.0).
 
-.. figure:: FSIFluidBoundaryElement2D_geometry.png
+.. figure:: figures/FSI_FE/FSIFluidBoundaryElement2D_geometry.png
 	:align: center
 	:figclass: align-center
 	:width: 40%
@@ -36,13 +36,13 @@ Fluid behavior. Wave equation
 -----------------------------
 |  The water is modeled as a linear inviscid, irrotational, and compressible fluid with hydrodynamic pressures p governed by the Helmholtz acoustic wave equation:	
 
-.. figure:: Helmholtz.png
+.. figure:: figures/FSI_FE/Helmholtz.png
 	:align: center
 	:figclass: align-center	
 	:width: 10%
    
 |  where
-.. figure:: WaveVel.png
+.. figure:: figures/FSI_FE/WaveVel.png
 	:align: center
 	:figclass: align-center	
 	:width: 5%
@@ -51,79 +51,79 @@ Fluid behavior. Wave equation
 Boundary conditions. Coupling and Radiation
 -------------------------------------------
 | We focus on the fluid-structure interaction (Class I problem), according to [ZienkiewiczEtAl2000]_ .
-.. figure:: FSIProblem_geometry.png
+.. figure:: figures/FSI_FE/FSIProblem_geometry.png
 	:align: center
 	:figclass: align-center	
 	:width: 40%
 | The appropriate boundary conditions can now be imposed and linkage with the structural equations achieved. Therefore,
 | On boundary 1: "Solid boundary"
-.. figure:: BC1a.png
+.. figure:: figures/FSI_FE/BC1a.png
 	:align: center
 	:figclass: align-center	
 	:width: 20%
 | which leads to
-.. figure:: BC1b.png
+.. figure:: figures/FSI_FE/BC1b.png
 	:align: center
 	:figclass: align-center	
 	:width: 20%
 
 | On boundary 2: "Solid boundary"
-.. figure:: BC2a.png
+.. figure:: figures/FSI_FE/BC2a.png
 	:align: center
 	:figclass: align-center	
 	:width: 20%
 | leading to
-.. figure:: BC2b.png
+.. figure:: figures/FSI_FE/BC2b.png
 	:align: center
 	:figclass: align-center	
 	:width: 20%
 | On boundary 3: "Free surface boundary"
 | On the free surface the selected assumption is :math:`p=\rho g\eta`, which accounts for surface gravity waves, where :math:`\eta` is the elevation relative to the surface mean surface and :math:`g` is the acceleration due to gravity.
 | This assumptions leads to the linearized free surface wave condition:
-.. figure:: BC3a.png
+.. figure:: figures/FSI_FE/BC3a.png
 	:align: center
 	:figclass: align-center	
 	:width: 15%
 | On boundary 4: "Radiation boundary"
 | The solution of the wave equation is composed of outgoing waves only: :math:`p = f(x - ct)`. Thus
-.. figure:: BC4a.png
+.. figure:: figures/FSI_FE/BC4a.png
 	:align: center
 	:figclass: align-center	
 	:width: 9%
 | and
-.. figure:: BC4b.png
+.. figure:: figures/FSI_FE/BC4b.png
 	:align: center
 	:figclass: align-center	
 	:width: 9%
 | By eliminating :math:`f'` we get 
-.. figure:: BC4c.png
+.. figure:: figures/FSI_FE/BC4c.png
 	:align: center
 	:figclass: align-center	
 	:width: 9%
 | This relation is known as the Sommerfeld radiation condition. 
 | The wave equation is to be solved in a volume :math:`\Omega_F`, subject to boundary conditions on its surface :math:`\Gamma_n`, leading to the following strong form for the fluid:
-.. figure:: S_form.png
+.. figure:: figures/FSI_FE/S_form.png
 	:align: center
 	:figclass: align-center	
 	:width: 17%
 | After multiplication by a weight function, integration by parts, application of the divergence theorem and susbstitution of BCs the weak form is shown below:
-.. figure:: W_form.png
+.. figure:: figures/FSI_FE/W_form.png
 	:align: center
 	:figclass: align-center	
 	:width: 75%
 | Standard Galerkin discretization applied to the weak form leads to
-.. figure:: M_form.png
+.. figure:: figures/FSI_FE/M_form.png
 	:align: center
 	:figclass: align-center	
 	:width: 75%  
 | The acoustic element stiffness matrix:
-.. figure:: Ke_f.png
+.. figure:: figures/FSI_FE/Ke_f.png
 	:align: center
 	:figclass: align-center	
 	:width: 17%  
    
 | The acoustic element mass matrix:   
-.. figure:: Me_f.png
+.. figure:: figures/FSI_FE/Me_f.png
 	:align: center
 	:figclass: align-center	
 	:width: 17%  
