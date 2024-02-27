@@ -112,21 +112,10 @@ Boundary conditions. Coupling and Radiation
 	:figclass: align-center	
 	:width: 75%
 | Standard Galerkin discretization applied to the weak form leads to
-.. math::
-
-   \left( \text{M} \right)\left\{
-   \begin{align*}
-      & \sum_{e}^{n_{el}} \delta \mathbf{P}_{e}^{\text{T}} \underbrace{\left( \int_{\Omega^{e}} \left( {\left( \nabla \mathbf{N}_{F} \right)}^{\text{T}} \nabla \mathbf{N}_{F} \right) d\Omega \right)}_{\mathbf{K}_{F}^{e}} \mathbf{P}_{e} \\
-      & + \sum_{e}^{n_{el}} \delta \mathbf{P}_{e}^{\text{T}} \underbrace{\left( \frac{1}{c^2} \int_{\Omega^{e}} \mathbf{N}_{F}^{\text{T}} \mathbf{N}_{F} d\Omega \right)}_{\mathbf{M}_{F}^{e}} {\mathbf{\ddot{P}}}_{e} \\
-      & + \sum_{e}^{n_{el}} \delta \mathbf{P}_{e}^{\text{T}} \underbrace{\left( \rho \int_{\Gamma_{1}^{e}} \mathbf{N}_{F}^{\text{T}} {\dot{u}}_{n_{F,h}} d\Gamma \right)}_{\mathbf{R}_{F,h}^{e}} \\
-      & + \sum_{e}^{n_{el}} \delta \mathbf{P}_{e}^{\text{T}} \underbrace{\left( \rho \int_{\Gamma_{2}^{e}} \mathbf{N}_{F}^{\text{T}} {\dot{u}}_{n_{F,b}} d\Gamma \right)}_{\mathbf{R}_{F,b}^{e}} \\
-      & + \cdots \\
-      & \cdots + \sum_{e}^{n_{el}} \delta \mathbf{P}_{e}^{\text{T}} \underbrace{\left( \frac{1}{c} \left( \frac{1-\alpha }{1+\alpha } \right) \int_{\Gamma_{2}^{e}} \mathbf{N}_{F}^{\text{T}} \mathbf{N}_{F} d\Gamma \right)}_{\mathbf{C}_{F,b}^{e}} {\mathbf{\dot{P}}}_{e} \\
-      & + \sum_{e}^{n_{el}} \delta \mathbf{P}_{e}^{\text{T}} \underbrace{\left( \frac{1}{g} \int_{\Gamma_{3}^{e}} \mathbf{N}_{F}^{\text{T}} \mathbf{N}_{F} d\Gamma \right)}_{\mathbf{W}_{F}^{e}} {\mathbf{\ddot{P}}}_{e} \\
-      & + \sum_{e}^{n_{el}} \delta \mathbf{P}_{e}^{\text{T}} \underbrace{\left( \frac{1}{c} \int_{\Gamma_{4}^{e}} \mathbf{N}_{F}^{\text{T}} \mathbf{N}_{F} d\Gamma \right)}_{\mathbf{C}_{F,r}^{e}} {\mathbf{\dot{P}}}_{e} = 0
-   \end{align*}
-   \right.\ 
-   
+.. figure:: M_form.png
+	:align: center
+	:figclass: align-center	
+	:width: 75%  
 | The acoustic element stiffness matrix:
 .. math::
 
