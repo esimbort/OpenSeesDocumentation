@@ -23,7 +23,7 @@ This command is used to construct an FSIFluidBoundaryElement2D element object. T
    Optional:
    $thickness, |float|, the thickness in 2D problems (default 1.0).
 
-.. figure:: FSIFluidBoundaryElement2D_geometry.png
+.. figure:: figures/FSI_FE/FSIFluidBoundaryElement2D_geometry.png
 	:align: center
 	:figclass: align-center
 	:width: 40%
@@ -33,23 +33,23 @@ This command is used to construct an FSIFluidBoundaryElement2D element object. T
 Theory
 ^^^^^^ 
 
-.. figure:: FSIProblem_geometry.png
+.. figure:: figures/FSI_FE/FSIProblem_geometry.png
 	:align: center
 	:figclass: align-center	
 	:width: 40%
 	
 | The element damping matrix (radiation boundary):
-.. figure:: Ce_f_r.png
+.. figure:: figures/FSI_FE/Ce_f_r.png
 	:align: center
 	:figclass: align-center	
 	:width: 20%
 | The element damping matrix (reservoir bottom absorption):
-.. figure:: Ce_f_b.png
+.. figure:: figures/FSI_FE/Ce_f_b.png
 	:align: center
 	:figclass: align-center	
 	:width: 20%
 | The element surface waves matrix:
-.. figure:: We_f.png
+.. figure:: figures/FSI_FE/We_f.png
 	:align: center
 	:figclass: align-center	
 	:width: 20%
