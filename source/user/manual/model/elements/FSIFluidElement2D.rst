@@ -117,14 +117,16 @@ Boundary conditions. Coupling and Radiation
 	:figclass: align-center	
 	:width: 75%  
 | The acoustic element stiffness matrix:
-.. math::
-
-   \mathbf{K}_{F}^{e} = \int_{\Omega^{e}} {\left( \nabla \mathbf{N}_{F} \right)}^{\text{T}} \nabla \mathbf{N}_{F} \, d\Omega
+.. figure:: Ke_f.png
+	:align: center
+	:figclass: align-center	
+	:width: 75%  
    
 | The acoustic element mass matrix:   
-.. math::
-
-   \mathbf{M}_{F}^{e} = \frac{1}{{c}^{2}} \int_{\Omega^{e}} \mathbf{N}_{F}^{\text{T}} \mathbf{N}_{F} \, d\Omega
+.. figure:: Me_f.png
+	:align: center
+	:figclass: align-center	
+	:width: 75%  
 
 .. admonition:: Example: Three cases of valid inputs are shown below: 1. Radiation boundary, 2. Reservoir bottom absorption and 3. Surface waves effects.
 
