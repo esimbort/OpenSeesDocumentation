@@ -41,12 +41,12 @@ Theory
 .. figure:: Se_h.png
 	:align: center
 	:figclass: align-center	
-	:width: 20%
+	:width: 17%
 | while for the bottom interface between the water reservoir and the soil domain
 .. figure:: Se_b.png
 	:align: center
 	:figclass: align-center	
-	:width: 20%
+	:width: 17%
 
 .. admonition:: Example 
 
