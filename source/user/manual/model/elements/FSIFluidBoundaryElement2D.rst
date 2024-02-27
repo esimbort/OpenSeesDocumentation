@@ -36,23 +36,23 @@ Theory
 .. figure:: FSIProblem_geometry.png
 	:align: center
 	:figclass: align-center	
-	:width: 20%
+	:width: 40%
 	
 | The element damping matrix (radiation boundary):
 .. figure:: Ce_f_r.png
 	:align: center
 	:figclass: align-center	
-	:width: 10%
+	:width: 20%
 | The element damping matrix (reservoir bottom absorption):
 .. figure:: Ce_f_b.png
 	:align: center
 	:figclass: align-center	
-	:width: 10%
+	:width: 20%
 | The element surface waves matrix:
 .. figure:: We_f.png
 	:align: center
 	:figclass: align-center	
-	:width: 10%
+	:width: 20%
 
 .. admonition:: Example: Three cases of valid inputs are shown below: 1. Radiation boundary, 2. Reservoir bottom absorption and 3. Surface waves effects.
 
