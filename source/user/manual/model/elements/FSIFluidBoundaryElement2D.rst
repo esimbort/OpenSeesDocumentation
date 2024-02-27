@@ -39,20 +39,20 @@ Theory
 	:width: 40%
 	
 | The element damping matrix (radiation boundary):
-.. math::
-
-   \mathbf{C}_{F,\,r}^{e} = \frac{1}{c} \int_{\Gamma_{4}^{e}} \mathbf{N}_{F}^{\text{T}} \mathbf{N}_{F} \, d\Gamma
-
+.. figure:: Ce_f_r.png
+	:align: center
+	:figclass: align-center	
+	:width: 40%
 | The element damping matrix (reservoir bottom absorption):
-.. math::
-
-   \mathbf{C}_{F,\,b}^{e} = \frac{1}{c} \left( \frac{1-\alpha}{1+\alpha} \right) \int_{\Gamma_{2}^{e}} \mathbf{N}_{F}^{\text{T}} \mathbf{N}_{F} \, d\Gamma
-
+.. figure:: Ce_f_b.png
+	:align: center
+	:figclass: align-center	
+	:width: 40%
 | The element surface waves matrix:
-.. math::
-
-   \mathbf{W}_{F}^{e} = \frac{1}{g} \int_{\Gamma_{3}^{e}} \mathbf{N}_{F}^{\text{T}} \mathbf{N}_{F} \, d\Gamma
-
+.. figure:: We_f.png
+	:align: center
+	:figclass: align-center	
+	:width: 40%
 
 .. admonition:: Example: Three cases of valid inputs are shown below: 1. Radiation boundary, 2. Reservoir bottom absorption and 3. Surface waves effects.
 
