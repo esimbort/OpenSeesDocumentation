@@ -22,7 +22,7 @@ This command is used to construct an FSIInterfaceElement2D element object. The F
    Optional:
    $thickness, |float|, the thickness in 2D problems (default 1.0).
 
-.. figure:: FSIInterfaceElement2D_geometry.png
+.. figure:: figures/FSI_FE/FSIInterfaceElement2D_geometry.png
 	:align: center
 	:figclass: align-center
 	:width: 40%
@@ -32,7 +32,7 @@ This command is used to construct an FSIInterfaceElement2D element object. The F
 Theory
 ^^^^^^ 
 
-.. figure:: FSIProblem_geometry.png
+.. figure:: figures/FSI_FE/FSIProblem_geometry.png
 	:align: center
 	:figclass: align-center	
 	:width: 40%
