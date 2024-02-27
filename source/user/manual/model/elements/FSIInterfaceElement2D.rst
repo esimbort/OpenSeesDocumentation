@@ -38,12 +38,12 @@ Theory
 	:width: 40%
 	
 | The element coupling matrix at the interface between the water reservoir and the structure is given by:
-.. figure:: Se_h.png
+.. figure:: figures/FSI_FE/Se_h.png
 	:align: center
 	:figclass: align-center	
 	:width: 15%
 | while for the bottom interface between the water reservoir and the soil domain
-.. figure:: Se_b.png
+.. figure:: figures/FSI_FE/Se_b.png
 	:align: center
 	:figclass: align-center	
 	:width: 15%
