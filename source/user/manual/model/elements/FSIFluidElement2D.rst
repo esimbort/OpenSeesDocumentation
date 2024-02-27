@@ -120,13 +120,13 @@ Boundary conditions. Coupling and Radiation
 .. figure:: Ke_f.png
 	:align: center
 	:figclass: align-center	
-	:width: 15%  
+	:width: 17%  
    
 | The acoustic element mass matrix:   
 .. figure:: Me_f.png
 	:align: center
 	:figclass: align-center	
-	:width: 15%  
+	:width: 17%  
 
 .. admonition:: Example: Three cases of valid inputs are shown below: 1. Radiation boundary, 2. Reservoir bottom absorption and 3. Surface waves effects.
 
