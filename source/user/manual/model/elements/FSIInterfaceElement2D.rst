@@ -37,15 +37,16 @@ Theory
 	:figclass: align-center	
 	:width: 40%
 	
-| The element coupling matrix:
-.. math::
-
-   \mathbf{s}_{h}^{e} = \int_{\Gamma_{1}^{e}} \mathbf{N}_{F}^{\text{T}} \mathbf{n}_{F,\,h}^{\text{T}} \mathbf{N}_{S} \, d\Gamma
-
-.. math::
-
-   \mathbf{s}_{b}^{e} = \int_{\Gamma_{2}^{e}} \mathbf{N}_{F}^{\text{T}} \mathbf{n}_{F,\,b}^{\text{T}} \mathbf{N}_{S} \, d\Gamma
-
+| The element coupling matrix at the interface between the water reservoir and the structure is given by:
+.. figure:: Se_h.png
+	:align: center
+	:figclass: align-center	
+	:width: 20%
+| while for the bottom interface between the water reservoir and the soil domain
+.. figure:: Se_b.png
+	:align: center
+	:figclass: align-center	
+	:width: 20%
 
 .. admonition:: Example 
 
