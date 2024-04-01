@@ -22,7 +22,7 @@ This command is used to construct an FSIFluidElement2D element object. The FSIFl
 .. figure:: figures/FSI_FE/FSIFluidElement2D_geometry.png
 	:align: center
 	:figclass: align-center
-	:width: 5%
+	:width: 75%
 
 	Nodes, Gauss points, parent coordinate system
 
