@@ -6,7 +6,7 @@ FSIFluidBoundaryElement2D Element
 This command is used to construct an FSIFluidBoundaryElement2D element object. The FSIFluidBoundaryElement2D element is a 2-node linear acoustic boundary element object with the following features:
 
 #. It is based on Eulerian pressure formulation ([ZienkiewiczEtAl1978]_ , [ZienkiewiczEtAl2000]_ , [LøkkeEtAl2017]_ ) for (Class I) fluid-structure interaction problem.
-#. It uses a 2 inetgration points Gauss quadrature.
+#. It uses a 2 integration points Gauss quadrature.
 #. Depending on the input variables, it enables the implementation of radiation boundary, reservoir bottom absorption or free surface effects.
 
 .. function:: element FSIFluidBoundaryElement2D $eleTag $n1 $n2 $cc $alpha $g <-thickness $thickness>
