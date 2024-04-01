@@ -26,7 +26,7 @@ This command is used to construct an FSIInterfaceElement2D element object. The F
 	:align: center
 	:figclass: align-center
 	:width: 50%
-         Nodes, local coordinate system
+        Nodes, local coordinate system
 
 
 .. admonition:: For additional documentation regarding the derivation of the implemented finite elements (FSIFluidElement2D, FSIFluidBoundaryElement2D, FSIInterfaceElement2D) based on the Eulerian pressure formulation, please refer to the attached PDF document (`Link to PDF <https://drive.google.com/drive/folders/1QnWEC6kJrFct5korO89bqL1lcn7zi4yG>`_)
