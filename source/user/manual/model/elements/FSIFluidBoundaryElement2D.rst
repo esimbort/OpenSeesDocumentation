@@ -26,7 +26,7 @@ This command is used to construct an FSIFluidBoundaryElement2D element object. T
 .. figure:: figures/FSI_FE/FSIFluidBoundaryElement2D_geometry.png
 	:align: center
 	:figclass: align-center
-	:width: 100%
+	:width: 50%
 
 	Nodes, Gauss points, local coordinate system
 	
