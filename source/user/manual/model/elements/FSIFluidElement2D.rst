@@ -80,7 +80,7 @@ Boundary conditions. Coupling and Radiation
 	:figclass: align-center	
 	:width: 20%
 | On boundary 3: "Free surface boundary"
-| On the free surface the selected assumption is :math:`p=\rho g\eta`, which accounts for surface gravity waves, where :math:`\eta` is the elevation relative to the surface mean surface and :math:`g` is the acceleration due to gravity.
+| On the free surface the selected assumption is :math:`p=\rho g\eta`, which accounts for surface gravity waves, where :math:`\eta` is the elevation relative to the mean water level and :math:`g` is the acceleration due to gravity.
 | This assumptions leads to the linearized free surface wave condition:
 .. figure:: figures/FSI_FE/BC3a.png
 	:align: center
@@ -103,12 +103,12 @@ Boundary conditions. Coupling and Radiation
 	:figclass: align-center	
 	:width: 9%
 | This relation is known as the Sommerfeld radiation condition. 
-| The wave equation is to be solved in a volume :math:`\Omega_F`, subject to boundary conditions on its surface :math:`\Gamma_n`, leading to the following strong form for the fluid:
+| The wave equation is to be solved in a 2D region (area) :math:`\Omega_F`, subject to boundary conditions on its surface :math:`\Gamma_n`, leading to the following strong form for the fluid:
 .. figure:: figures/FSI_FE/S_form.png
 	:align: center
 	:figclass: align-center	
 	:width: 17%
-| After multiplication by a weight function, integration by parts, application of the divergence theorem and susbstitution of BCs the weak form is shown below:
+| After multiplication by a weight function, integration by parts, application of the divergence theorem and susbstitution of BCs the strong form of the problem is reduced to the weak form shown below:
 .. figure:: figures/FSI_FE/W_form.png
 	:align: center
 	:figclass: align-center	
@@ -118,13 +118,13 @@ Boundary conditions. Coupling and Radiation
 	:align: center
 	:figclass: align-center	
 	:width: 75%  
-| The acoustic element stiffness matrix:
+| The acoustic element stiffness matrix is:
 .. figure:: figures/FSI_FE/Ke_f.png
 	:align: center
 	:figclass: align-center	
 	:width: 17%  
    
-| The acoustic element mass matrix:   
+| The acoustic element mass matrix is:   
 .. figure:: figures/FSI_FE/Me_f.png
 	:align: center
 	:figclass: align-center	
@@ -150,7 +150,7 @@ Boundary conditions. Coupling and Radiation
       # record added hydrodynamic pressures at element nodes (4 columns, 1 for each node)
       recorder Element  -xml  pressure_out.xml  -ele  1  pressure
       # record first time derivative of added hydrodynamic pressures at element nodes (4 columns, 1 for each node)
-      recorder Element  -xml  pressureVel_out.xml  -ele  1  pressureVel
+      recorder Element  -xml  dpressure_dt_out.xml  -ele  1  dpressure_dt
 
    2. **Python Code**
 
@@ -170,7 +170,7 @@ Boundary conditions. Coupling and Radiation
       # record added hydrodynamic pressures at element nodes (4 columns, 1 for each node)
       recorder('Element', '-xml', 'pressure_out.xml', '-ele', 1, 'pressure')
       # record first time derivative of added hydrodynamic pressures at element nodes (4 columns, 1 for each node)
-      recorder('Element', '-xml', 'pressureVel_out.xml', '-ele', 1, 'pressureVel')
+      recorder('Element', '-xml', 'dpressure_dt_out.xml', '-ele', 1, 'dpressure_dt')
 
 Code Developed by: **Massimo Petracca** at ASDEA Software, Italy.
 
