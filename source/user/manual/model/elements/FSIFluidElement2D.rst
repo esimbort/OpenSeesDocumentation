@@ -57,7 +57,7 @@ Boundary conditions. Coupling and Radiation
 	:align: center
 	:figclass: align-center	
 	:width: 40%
-| The appropriate boundary conditions can now be imposed and linkage with the structural equations achieved. Therefore,
+| The appropriate boundary conditions can now be imposed and their connection with the structural governing differential equations established. Therefore,
 | On boundary 1: "Solid boundary"
 .. figure:: figures/FSI_FE/BC1a.png
 	:align: center
