@@ -18,7 +18,7 @@ This command is used to construct an FSIFluidBoundaryElement2D element object. T
    $eleTag, |integer|, unique integer tag identifying element object
    $n1 $n2, 2 |integer|, the two nodes defining the element (-ndm 2 -ndf 1)
    $cc, |float|, speed of pressure waves in water
-   $alpha, |float|, reservoir bottom reflection coefficient [LøkkeEtAl2017]_
+   $alpha, |float|, reservoir bottom reflection coefficient ([LøkkeEtAl2017]_)
    $g, |float|, acceleration due to gravity
    Optional:
    $thickness, |float|, the thickness in 2D problems (default 1.0).
