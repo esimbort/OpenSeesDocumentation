@@ -19,11 +19,11 @@ This command is used to construct an FSIFluidElement2D element object. The FSIFl
    $cc, |float|, speed of pressure waves in water
 
 
-.. figure:: FSIFluidElement2D_geometry.png
+.. figure:: figures/FSI_FE/FSIFluidElement2D_geometry.png
 	:align: center
 	:figclass: align-center
 
-	Nodes, Gauss points, local coordinate system
+	Nodes, Gauss points, parent coordinate system
 
 .. note::
 
