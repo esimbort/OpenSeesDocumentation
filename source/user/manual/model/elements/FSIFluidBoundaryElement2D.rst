@@ -29,7 +29,8 @@ This command is used to construct an FSIFluidBoundaryElement2D element object. T
 	:width: 50%
 
 	Nodes, Gauss points, local coordinate system
-	
+
+.. note::	
 For additional documentation regarding the derivation of the implemented finite elements (FSIFluidElement2D, FSIFluidBoundaryElement2D, FSIInterfaceElement2D) based on the Eulerian pressure formulation, please refer to the attached PDF document (`Link to PDF <https://drive.google.com/drive/folders/1QnWEC6kJrFct5korO89bqL1lcn7zi4yG>`_)
 
 .. admonition:: Example: Three cases of valid inputs are shown below: 1. Radiation boundary, 2. Reservoir bottom absorption and 3. Surface waves effects.
