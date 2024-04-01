@@ -26,8 +26,8 @@ This command is used to construct an FSIFluidElement2D element object. The FSIFl
 
 	Nodes, Gauss points, parent coordinate system
 
-.. note::
 
+.. note::
    Valid queries to the FSIFluidElement2D element when creating an ElementRecorder object are:
    
    *  '**pressure**', '**dpressure_dt**', '**d2pressure_dt2**':
