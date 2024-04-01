@@ -5,9 +5,9 @@ FSIInterfaceElement2D Element
 
 This command is used to construct an FSIInterfaceElement2D element object. The FSIInterfaceElement2D element is a 2-node linear acoustic-structure interface element object with the following features:
 
-#. It is based on Eulerian pressure formulation [ZienkiewiczEtAl1978]_ , [ZienkiewiczEtAl2000]_ , [LøkkeEtAl2017]_ , for (Class I) fluid-structure interaction problem.
+#. It is based on Eulerian pressure formulation ([ZienkiewiczEtAl1978]_ , [ZienkiewiczEtAl2000]_ , [LøkkeEtAl2017]_ ) for (Class I) fluid-structure interaction problem.
 #. It couples the structure and fluid domains.
-#. It uses a 2 inetgration points Gauss quadrature.
+#. It uses a 2 integration points Gauss quadrature.
 #. It has three DOFs: two displacements and one pressure DOF. The nodes in the acoustic domain share the same coordinates with the nodes in the solid domain.
 
 .. function:: element FSIInterfaceElement2D $eleTag $n1 $n2 $rho <-thickness $thickness>
@@ -29,24 +29,7 @@ This command is used to construct an FSIInterfaceElement2D element object. The F
 
 	Nodes, Gauss points, local coordinate system
 	
-Theory
-^^^^^^ 
-
-.. figure:: figures/FSI_FE/FSIProblem_geometry.png
-	:align: center
-	:figclass: align-center	
-	:width: 40%
-	
-| The element coupling matrix at the interface between the water reservoir and the structure is given by:
-.. figure:: figures/FSI_FE/Se_h.png
-	:align: center
-	:figclass: align-center	
-	:width: 15%
-| while for the bottom interface between the water reservoir and the soil domain
-.. figure:: figures/FSI_FE/Se_b.png
-	:align: center
-	:figclass: align-center	
-	:width: 15%
+For additional documentation regarding the derivation of the implemented finite elements (FSIFluidElement2D, FSIFluidBoundaryElement2D, FSIInterfaceElement2D) based on the Eulerian pressure formulation, please refer to the attached PDF document (`Link to PDF <https://drive.google.com/drive/folders/1QnWEC6kJrFct5korO89bqL1lcn7zi4yG>`_)
 
 .. admonition:: Example 
 
