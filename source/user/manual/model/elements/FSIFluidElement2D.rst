@@ -5,7 +5,7 @@ FSIFluidElement2D Element
 
 This command is used to construct an FSIFluidElement2D element object. The FSIFluidElement2D element is a 4-node bilinear acoustic element with the following features:
 
-#. It is based on the Eulerian pressure formulation [ZienkiewiczEtAl1978]_ , [ZienkiewiczEtAl2000]_ , [LøkkeEtAl2017]_ , for (Class I) fluid-structure interaction problem.
+#. It is based on the Eulerian pressure formulation ([ZienkiewiczEtAl1978]_ , [ZienkiewiczEtAl2000]_ , [LøkkeEtAl2017]) for (Class I) fluid-structure interaction problem.
 #. It uses a full 2x2 Gauss quadrature, and therefore has a total of 4 integration points.
 
 .. function:: element FSIFluidElement2D $eleTag $n1 $n2 $n3 $n4 $cc
@@ -29,25 +29,25 @@ This command is used to construct an FSIFluidElement2D element object. The FSIFl
 
    Valid queries to the FSIFluidElement2D element when creating an ElementRecorder object are:
    
-   *  '**pressure**', '**pressureVel**', '**pressureAccel**':
+   *  '**pressure**', '**dpressure_dt**', '**d2pressure_dt2**':
        *  Added hydrodynamic pressure and its first and second time derivatives.
 	   
 Theory
 ^^^^^^ 
 Fluid behavior. Wave equation
 -----------------------------
-|  The water is modeled as a linear inviscid, irrotational, and compressible fluid with hydrodynamic pressures p governed by the Helmholtz acoustic wave equation:	
+|  The water is modeled as a linear inviscid, irrotational, and compressible fluid with added (to the hydrostatic pressure) hydrodynamic pressure p(x, y, t) governed by the Helmholtz acoustic wave equation:	
 
 .. figure:: figures/FSI_FE/Helmholtz.png
 	:align: center
 	:figclass: align-center	
-	:width: 10%
+	:width: 15%
    
 |  where
 .. figure:: figures/FSI_FE/WaveVel.png
 	:align: center
 	:figclass: align-center	
-	:width: 5%
+	:width: 10%
 |  denotes the speed of sound in the fluid, K and \rho are the bulk modulus and the mass density of the fluid, respectively.
 
 Boundary conditions. Coupling and Radiation
