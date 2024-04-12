@@ -4,8 +4,8 @@ FSIFluidElement2D Element
 ^^^^^^^^^^^^^^^^^^^^^^^^^
 | Developed and implemented by: 
 | `Massimo Petracca <mailto:m.petracca@asdea.net>`_ (Asdea Srl)
-| Enrique Simbort <mailto:egsimbortzeballos@ucsd.edu>`_ (UC San Diego)
-| Joel Conte <mailto:jpconte@ucsd.edu>`_ (UC San Diego)
+| `Enrique Simbort <mailto:egsimbortzeballos@ucsd.edu>`_ (UC San Diego)
+| `Joel Conte <mailto:jpconte@ucsd.edu>`_ (UC San Diego)
 
 This command is used to construct an FSIFluidElement2D element object. The FSIFluidElement2D element is a 4-node bilinear acoustic element with the following features:
 
