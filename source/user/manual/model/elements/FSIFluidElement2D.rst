@@ -7,6 +7,8 @@ FSIFluidElement2D Element
 | `Enrique Simbort <mailto:egsimbortzeballos@ucsd.edu>`_ (UC San Diego)
 | `Joel Conte <mailto:jpconte@ucsd.edu>`_ (UC San Diego)
 
+Description
+################
 This command is used to construct an FSIFluidElement2D element object. The FSIFluidElement2D element is a 4-node bilinear acoustic element with the following features:
 
 #. It is based on the Eulerian pressure formulation ([ZienkiewiczEtAl1978]_ , [ZienkiewiczEtAl2000]_ , [LøkkeEtAl2017]_) for (Class I) fluid-structure interaction problem.
