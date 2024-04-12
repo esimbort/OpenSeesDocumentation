@@ -2,10 +2,6 @@
 
 FSIFluidElement2D Element
 ^^^^^^^^^^^^^^^^^^^^^^^^^
-| Developed and implemented by: 
-| `Massimo Petracca <mailto:m.petracca@asdea.net>`_ (Asdea Srl)
-| `Enrique Simbort <mailto:egsimbortzeballos@ucsd.edu>`_ (UC San Diego)
-| `Joel Conte <mailto:jpconte@ucsd.edu>`_ (UC San Diego)
 
 Description
 ################
@@ -85,7 +81,10 @@ For additional documentation regarding the derivation of the implemented finite 
       # record first time derivative of added hydrodynamic pressures at element nodes (4 columns, 1 for each node)
       recorder('Element', '-xml', 'dpressure_dt_out.xml', '-ele', 1, 'dpressure_dt')
 
-Code Developed by: **Massimo Petracca** at ASDEA Software, Italy.
+Code Developed and implemented by:
+| `Massimo Petracca <mailto:m.petracca@asdea.net>`_ (ASDEA Software),
+| `Enrique Simbort <mailto:egsimbortzeballos@ucsd.edu>`_ (UC San Diego),
+| `Joel Conte <mailto:jpconte@ucsd.edu>`_ (UC San Diego).
 
 .. [ZienkiewiczEtAl1978] | Zienkiewicz O.C., Bettess P. "Fluid-structure dynamic interaction and wave forces. An introduction to numerical treatment", Inter. J. Numer. Meth. Eng.., 13(1): 1–16. (`Link to article <https://onlinelibrary.wiley.com/doi/10.1002/nme.1620130102>`_)
 .. [ZienkiewiczEtAl2000] | Zienkiewicz O.C., Taylor R.L. "The Finite Element Method", Butterworth-Heinemann, Vol.1, 5th Ed., Ch.19.
