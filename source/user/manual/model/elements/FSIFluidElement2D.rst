@@ -93,6 +93,7 @@ Example
       recorder('Element', '-xml', 'dpressure_dt_out.xml', '-ele', 1, 'dpressure_dt')
 
 Code Developed and implemented by:
+
 | `Massimo Petracca <mailto:m.petracca@asdea.net>`_ (ASDEA Software),
 | `Enrique Simbort <mailto:egsimbortzeballos@ucsd.edu>`_ (UC San Diego),
 | `Joel Conte <mailto:jpconte@ucsd.edu>`_ (UC San Diego).
