@@ -34,7 +34,8 @@ Input Parameters
 
 	Nodes, Gauss points, parent coordinate system
 
-.. note::
+Recorders
+#########
    Valid queries to the FSIFluidElement2D element when creating an ElementRecorder object are:
    
    *  '**pressure**', '**dpressure_dt**', '**d2pressure_dt2**':
