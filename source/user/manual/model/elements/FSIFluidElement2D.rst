@@ -47,7 +47,7 @@ Valid queries to the FSIFluidElement2D element when creating an ElementRecorder 
 Theory
 ########################
 
-For additional documentation regarding the derivation of the implemented finite elements (FSIFluidElement2D, FSIFluidBoundaryElement2D, FSIInterfaceElement2D) based on the Eulerian pressure formulation, please refer to the attached PDF document (`Link to PDF <https://drive.google.com/drive/folders/1QnWEC6kJrFct5korO89bqL1lcn7zi4yG>`_)
+For additional documentation regarding the derivation of the implemented finite elements (FSIFluidElement2D, FSIFluidBoundaryElement2D <https://github.com/esimbort/OpenSeesDocumentation/blob/master/source/user/manual/model/elements/FSIFluidBoundaryElement2D.rst>`_, FSIInterfaceElement2D <https://github.com/esimbort/OpenSeesDocumentation/blob/master/source/user/manual/model/elements/FSIInterfaceElement2D.rst>`_) based on the Eulerian pressure formulation, please refer to the attached PDF document (`Link to PDF <https://drive.google.com/drive/folders/1QnWEC6kJrFct5korO89bqL1lcn7zi4yG>`_)
 
 Example
 #######
