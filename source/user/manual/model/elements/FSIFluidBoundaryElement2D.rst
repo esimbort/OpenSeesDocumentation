@@ -35,7 +35,9 @@ Input Parameters
 
 	Nodes, Gauss points, local coordinate system
 
-.. note::	
+Theory
+######
+
 For additional documentation regarding the derivation of the implemented finite elements (`FSIFluidElement2D <https://github.com/esimbort/OpenSeesDocumentation/blob/master/source/user/manual/model/elements/FSIFluidElement2D.rst>`_, FSIFluidBoundaryElement2D, `FSIInterfaceElement2D <https://github.com/esimbort/OpenSeesDocumentation/blob/master/source/user/manual/model/elements/FSIInterfaceElement2D.rst>`_) based on the Eulerian pressure formulation, please refer to the attached PDF document (`Link to PDF <https://drive.google.com/drive/folders/1QnWEC6kJrFct5korO89bqL1lcn7zi4yG>`_)
 
 Example
