@@ -19,9 +19,9 @@ Input Parameters
    :header: "Argument", "Type", "Description"
    :widths: 10, 10, 40
 
-   $eleTag, |integer|, unique integer tag identifying element object
-   $n1 $n2 $n3 $n4, 4 |integer|, the four nodes defining the element (-ndm 2 -ndf 1)
-   $cc, |float|, speed of pressure waves in water
+   $eleTag, integer, unique integer tag identifying element object
+   $n1 $n2 $n3 $n4, 4 integers, the four nodes defining the element (-ndm 2 -ndf 1)
+   $cc, float, speed of pressure waves in water
 
 
 .. figure:: figures/FSI_FE/FSIFluidElement2D_geometry.png
