@@ -14,6 +14,8 @@ This command is used to construct an FSIFluidElement2D element object. The FSIFl
 #. It is based on the Eulerian pressure formulation ([ZienkiewiczEtAl1978]_ , [ZienkiewiczEtAl2000]_ , [LøkkeEtAl2017]_) for (Class I) fluid-structure interaction problem.
 #. It uses a full 2x2 Gauss quadrature, and therefore has a total of 4 integration points.
 
+Input Parameters
+################
 .. function:: element FSIFluidElement2D $eleTag $n1 $n2 $n3 $n4 $cc
 
 .. csv-table:: 
