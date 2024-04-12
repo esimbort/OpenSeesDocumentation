@@ -112,6 +112,7 @@ Example
       element('FSIFluidBoundaryElement2D', 5, 11, 22, 0.0, 0.0, g, thickness=1.0)
 
 Code Developed and implemented by:
+
 | `Massimo Petracca <mailto:m.petracca@asdea.net>`_ (ASDEA Software),
 | `Enrique Simbort <mailto:egsimbortzeballos@ucsd.edu>`_ (UC San Diego),
 | `Joel Conte <mailto:jpconte@ucsd.edu>`_ (UC San Diego).
