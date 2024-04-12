@@ -4,7 +4,7 @@ FSIFluidBoundaryElement2D Element
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Description
-################
+###########
 This command is used to construct an FSIFluidBoundaryElement2D element object. The FSIFluidBoundaryElement2D element is a 2-node linear acoustic boundary element object with the following features:
 
 #. It is based on Eulerian pressure formulation ([ZienkiewiczEtAl1978]_ , [ZienkiewiczEtAl2000]_ , [LøkkeEtAl2017]_ ) for (Class I) fluid-structure interaction problem.
