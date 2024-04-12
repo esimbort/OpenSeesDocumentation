@@ -3,6 +3,8 @@
 FSIInterfaceElement2D Element
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Description
+###########
 This command is used to construct an FSIInterfaceElement2D element object. The FSIInterfaceElement2D element is a 2-node linear acoustic-structure interface element object with the following features:
 
 #. It is based on Eulerian pressure formulation ([ZienkiewiczEtAl1978]_ , [ZienkiewiczEtAl2000]_ , [LøkkeEtAl2017]_ ) for (Class I) fluid-structure interaction problem.
@@ -10,17 +12,20 @@ This command is used to construct an FSIInterfaceElement2D element object. The F
 #. It uses a 2 integration points Gauss quadrature.
 #. It has three DOFs: two displacements and one pressure DOF. The nodes in the acoustic domain share the same coordinates with the nodes in the solid domain.
 
+Input Parameters
+################
+
 .. function:: element FSIInterfaceElement2D $eleTag $n1 $n2 $rho <-thickness $thickness>
 
 .. csv-table:: 
    :header: "Argument", "Type", "Description"
    :widths: 10, 10, 40
 
-   $eleTag, |integer|, unique integer tag identifying element object
-   $n1 $n2, 2 |integer|, the two nodes defining the element (-ndm 2 -ndf 3)
-   $rho, |float|, the mass density of the fluid domain (acoustic medium)
+   $eleTag, integer, unique integer tag identifying element object
+   $n1 $n2, 2 integers, the two nodes defining the element (-ndm 2 -ndf 3)
+   $rho, float, the mass density of the fluid domain (acoustic medium)
    Optional:
-   $thickness, |float|, the thickness in 2D problems (default 1.0).
+   $thickness, float, the thickness in 2D problems (default 1.0).
 
 .. figure:: figures/FSI_FE/FSIInterfaceElement2D_geometry.png
 	:align: center
@@ -29,8 +34,10 @@ This command is used to construct an FSIInterfaceElement2D element object. The F
        
 	Nodes, local coordinate system
 
-.. note::
-.. admonition:: For additional documentation regarding the derivation of the implemented finite elements (FSIFluidElement2D, FSIFluidBoundaryElement2D, FSIInterfaceElement2D) based on the Eulerian pressure formulation, please refer to the attached PDF document (`Link to PDF <https://drive.google.com/drive/folders/1QnWEC6kJrFct5korO89bqL1lcn7zi4yG>`_)
+Theory
+######
+
+For additional documentation regarding the derivation of the implemented finite elements (`FSIFluidElement2D <https://github.com/esimbort/OpenSeesDocumentation/blob/master/source/user/manual/model/elements/FSIFluidElement2D.rst>`_, FSIFluidBoundaryElement2D, FSIInterfaceElement2D) based on the Eulerian pressure formulation, please refer to the attached PDF document (`Link to PDF <https://drive.google.com/drive/folders/1QnWEC6kJrFct5korO89bqL1lcn7zi4yG>`_)
 
 .. admonition:: Example 
 
@@ -60,7 +67,14 @@ This command is used to construct an FSIInterfaceElement2D element object. The F
       rhoW = 1.000000e+03  # mass density of water
       element('FSIInterfaceElement2D', 2, 11, 22, rhoW, thickness=1.0)
 
-Code Developed by: **Massimo Petracca** at ASDEA Software, Italy.
+Code Developed and implemented by:
+
+| `Massimo Petracca <mailto:m.petracca@asdea.net>`_ (ASDEA Software),
+| `Enrique Simbort <mailto:egsimbortzeballos@ucsd.edu>`_ (UC San Diego),
+| `Joel Conte <mailto:jpconte@ucsd.edu>`_ (UC San Diego).
+
+References
+##########
 
 .. [ZienkiewiczEtAl1978] | Zienkiewicz O.C., Bettess P. "Fluid-structure dynamic interaction and wave forces. An introduction to numerical treatment", Inter. J. Numer. Meth. Eng.., 13(1): 1–16. (`Link to article <https://onlinelibrary.wiley.com/doi/10.1002/nme.1620130102>`_)
 .. [ZienkiewiczEtAl2000] | Zienkiewicz O.C., Taylor R.L. "The Finite Element Method", Butterworth-Heinemann, Vol.1, 5th Ed., Ch.19.
