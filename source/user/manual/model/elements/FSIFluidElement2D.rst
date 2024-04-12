@@ -34,11 +34,19 @@ Input Parameters
 Recorders
 #########
 
-   Valid queries to the FSIFluidElement2D element when creating an ElementRecorder object are:
-   
-   *  '**pressure**', '**dpressure_dt**', '**d2pressure_dt2**':
-       *  Added hydrodynamic pressure and its first and second time derivatives.
-	   
+Valid queries to the FSIFluidElement2D element when creating an ElementRecorder object are:
+
+.. csv-table:: 
+   :header: "Recorder", "Description"
+   :widths: 20, 40
+
+   '**pressure**',  Added hydrodynamic pressure
+   '**dpressure_dt**',  First time derivatives of added hydrodynamic pressure
+   '**d2pressure_dt2**',  Second time derivatives of added hydrodynamic pressure
+
+Theory
+########################
+
 For additional documentation regarding the derivation of the implemented finite elements (FSIFluidElement2D, FSIFluidBoundaryElement2D, FSIInterfaceElement2D) based on the Eulerian pressure formulation, please refer to the attached PDF document (`Link to PDF <https://drive.google.com/drive/folders/1QnWEC6kJrFct5korO89bqL1lcn7zi4yG>`_)
 
 Example
