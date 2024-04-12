@@ -12,6 +12,7 @@ This command is used to construct an FSIFluidElement2D element object. The FSIFl
 
 Input Parameters
 ################
+
 .. function:: element FSIFluidElement2D $eleTag $n1 $n2 $n3 $n4 $cc
 
 .. csv-table:: 
@@ -32,6 +33,7 @@ Input Parameters
 
 Recorders
 #########
+
    Valid queries to the FSIFluidElement2D element when creating an ElementRecorder object are:
    
    *  '**pressure**', '**dpressure_dt**', '**d2pressure_dt2**':
@@ -39,7 +41,8 @@ Recorders
 	   
 For additional documentation regarding the derivation of the implemented finite elements (FSIFluidElement2D, FSIFluidBoundaryElement2D, FSIInterfaceElement2D) based on the Eulerian pressure formulation, please refer to the attached PDF document (`Link to PDF <https://drive.google.com/drive/folders/1QnWEC6kJrFct5korO89bqL1lcn7zi4yG>`_)
 
-.. admonition:: Example:
+Example
+#######
 
    1. **Tcl Code**
 
@@ -85,6 +88,9 @@ Code Developed and implemented by:
 | `Massimo Petracca <mailto:m.petracca@asdea.net>`_ (ASDEA Software),
 | `Enrique Simbort <mailto:egsimbortzeballos@ucsd.edu>`_ (UC San Diego),
 | `Joel Conte <mailto:jpconte@ucsd.edu>`_ (UC San Diego).
+
+References
+##########
 
 .. [ZienkiewiczEtAl1978] | Zienkiewicz O.C., Bettess P. "Fluid-structure dynamic interaction and wave forces. An introduction to numerical treatment", Inter. J. Numer. Meth. Eng.., 13(1): 1–16. (`Link to article <https://onlinelibrary.wiley.com/doi/10.1002/nme.1620130102>`_)
 .. [ZienkiewiczEtAl2000] | Zienkiewicz O.C., Taylor R.L. "The Finite Element Method", Butterworth-Heinemann, Vol.1, 5th Ed., Ch.19.
