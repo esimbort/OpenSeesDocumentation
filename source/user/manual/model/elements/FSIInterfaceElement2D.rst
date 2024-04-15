@@ -32,7 +32,7 @@ Input Parameters
 	:figclass: align-center
 	:width: 50%
        
-	**Figure 1. Nodes and local coordinate system
+	**Figure 1. Nodes and local coordinate system**
 
 Theory
 ######
