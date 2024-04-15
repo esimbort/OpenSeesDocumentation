@@ -7,7 +7,7 @@ Description
 ################
 This command is used to construct an FSIFluidElement2D element object. The FSIFluidElement2D element is a 4-node bilinear acoustic element with the following features:
 
-#. It is based on the Eulerian pressure formulation ([ZienkiewiczEtAl1978]_ , [ZienkiewiczEtAl2000]_ , [LøkkeEtAl2017]_) for (Class I) fluid-structure interaction problem.
+#. It is based on the Eulerian pressure formulation ([ZienkiewiczEtAl1978]_ , [ZienkiewiczEtAl2000]_ , [LøkkeEtAl2017]_) for (Class I) fluid-structure interaction problems.
 #. It uses a full 2x2 Gauss quadrature, and therefore has a total of 4 integration points.
 
 Input Parameters
@@ -28,8 +28,7 @@ Input Parameters
 	:align: center
 	:figclass: align-center
 	:width: 50%
-
-	Nodes, Gauss points, parent coordinate system
+	Figure 1. Nodes, Gauss points and parent coordinate system
 
 Recorders
 #########
