@@ -41,16 +41,16 @@ Valid queries to the FSIFluidElement2D element when creating an ElementRecorder 
    :widths: 20, 40
 
    '**pressure**',  Added hydrodynamic pressure
-   '**dpressure_dt**',  First time derivatives of added hydrodynamic pressure
-   '**d2pressure_dt2**',  Second time derivatives of added hydrodynamic pressure
+   '**dpressure_dt**',  First time derivative of added hydrodynamic pressure
+   '**d2pressure_dt2**',  Second time derivative of added hydrodynamic pressure
 
 Theory
 ######
 
 For additional documentation regarding the derivation of the implemented finite elements (FSIFluidElement2D, `FSIFluidBoundaryElement2D <https://github.com/esimbort/OpenSeesDocumentation/blob/master/source/user/manual/model/elements/FSIFluidBoundaryElement2D.rst>`_, `FSIInterfaceElement2D <https://github.com/esimbort/OpenSeesDocumentation/blob/master/source/user/manual/model/elements/FSIInterfaceElement2D.rst>`_) based on the Eulerian pressure formulation, please refer to the attached PDF document (`Link to PDF <https://drive.google.com/drive/folders/1QnWEC6kJrFct5korO89bqL1lcn7zi4yG>`_)
 
-Example
-#######
+Example of how to define a single 2D acoustic finite element
+############################################################
 
    1. **Tcl Code**
 
@@ -92,7 +92,7 @@ Example
       # record first time derivative of added hydrodynamic pressures at element nodes (4 columns, 1 for each node)
       recorder('Element', '-xml', 'dpressure_dt_out.xml', '-ele', 1, 'dpressure_dt')
 
-Code Developed and implemented by:
+Code Developed, implemented and tested by:
 
 | `Massimo Petracca <mailto:m.petracca@asdea.net>`_ (ASDEA Software),
 | `Enrique Simbort <mailto:egsimbortzeballos@ucsd.edu>`_ (UC San Diego),
@@ -101,6 +101,6 @@ Code Developed and implemented by:
 References
 ##########
 
-.. [ZienkiewiczEtAl1978] | Zienkiewicz O.C., Bettess P. "Fluid-structure dynamic interaction and wave forces. An introduction to numerical treatment", Inter. J. Numer. Meth. Eng.., 13(1): 1–16. (`Link to article <https://onlinelibrary.wiley.com/doi/10.1002/nme.1620130102>`_)
-.. [ZienkiewiczEtAl2000] | Zienkiewicz O.C., Taylor R.L. "The Finite Element Method", Butterworth-Heinemann, Vol.1, 5th Ed., Ch.19.
-.. [LøkkeEtAl2017] Løkke A., Chopra A.K. "Direct finite element method for nonlinear analysis of semi-unbounded dam–water–foundation rock systems", Earthquake Engineering and Structural Dynamics 46(8): 1267–1285. (`Link to article <https://onlinelibrary.wiley.com/doi/abs/10.1002/eqe.2855>`_)
+.. [ZienkiewiczEtAl1978] | Zienkiewicz O.C., Bettess P. (1978) "Fluid-structure dynamic interaction and wave forces. An introduction to numerical treatment", Inter. J. Numer. Meth. Eng.., 13(1): 1–16. (`Link to article <https://onlinelibrary.wiley.com/doi/10.1002/nme.1620130102>`_)
+.. [ZienkiewiczEtAl2000] | Zienkiewicz O.C., Taylor R.L. (2000) "The Finite Element Method", Butterworth-Heinemann, Vol.1, 5th Ed., Ch.19.
+.. [LøkkeEtAl2017] Løkke A., Chopra A.K. (2017) "Direct finite element method for nonlinear analysis of semi-unbounded dam–water–foundation rock systems", Earthquake Engineering and Structural Dynamics 46(8): 1267–1285. (`Link to article <https://onlinelibrary.wiley.com/doi/abs/10.1002/eqe.2855>`_)
