@@ -28,6 +28,7 @@ Input Parameters
 	:align: center
 	:figclass: align-center
 	:width: 50%
+
 	**Figure 1. Nodes, Gauss points and parent coordinate system**
 
 Recorders
