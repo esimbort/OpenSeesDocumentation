@@ -34,7 +34,7 @@ Input Parameters
 Recorders
 #########
 
-This element does not feature specific queries for element recorders. However, you can visualize the following quantities: the added hydrodynamic pressure, its first-time derivative, and its second-time derivative by examining the first component of displacement, velocity, and acceleration at the nodes.
+This element does not feature specific queries for element recorders. However, you can visualize the following quantities: the added hydrodynamic pressure, its first-time derivative, and its second-time derivative by examining the first component of **displacement**, **velocity**, and **acceleration** at the nodes.
 
 Theory
 ######
