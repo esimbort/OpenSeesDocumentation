@@ -34,15 +34,7 @@ Input Parameters
 Recorders
 #########
 
-Valid queries to the FSIFluidElement2D element when creating an ElementRecorder object are:
-
-.. csv-table:: 
-   :header: "Recorder", "Description"
-   :widths: 20, 40
-
-   '**pressure**',  Added hydrodynamic pressure
-   '**dpressure_dt**',  First time derivative of added hydrodynamic pressure
-   '**d2pressure_dt2**',  Second time derivative of added hydrodynamic pressure
+This element does not feature specific queries for element recorders. However, you can visualize the following quantities: the added hydrodynamic pressure, its first-time derivative, and its second-time derivative by examining the first component of displacement, velocity, and acceleration at the nodes.
 
 Theory
 ######
